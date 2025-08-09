@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Abeer Khan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <h1>QR Code Generator</h1>
+
+            <div class="details">
+                <div class="details1">
+                    <label for="size">Resolution:</label>
+                    <select name="size" id="size">
+                        <optgroup label="---SELECT RESOLUTION---">
+                            <option value="100x100">100x100px</option>
+                            <option value="200x200">200x200px</option>
+                            <option value="300x300">300x300px</option>
+                            <option value="400x400">400x400px</option>
+                            <option value="500x500">500x500px</option>
+                            <option value="600x600">600x600px</option>
+                            <option value="700x700">700x700px</option>
+                            <option value="800x800">800x800px</option>
+                            <option value="900x900">900x900px</option>
+                            <option value="1000x1000">1000x1000px</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="details2">
+                    <label for="format">File Format:</label>
+                    <select name="format" id="format">
+                        <optgroup label="---SELECT FILE FORMAT---">
+                            <option value="png">png</option>
+                            <option value="gif">gif</option>
+                            <option value="jpeg">jpeg</option>
+                            <option value="jpg">jpg</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="color">
+                <div class="color1">
+                    <label for="color">Color:</label>
+                    <input type="color" name="color" id="color" value="#000000">
+                </div>
+
+                <div class="color2">
+                    <label for="bg-color">Background Color:</label>
+                    <input type="color" name="bg-color" id="bg-color" value="#ffffff">
+                </div>
+            </div>
+
+            <label for="URL">Enter URL:</label>
+            <input class="URL" name="URL" type="url" placeholder="https://www.example.com">
+
+            <label for="img" class="label">Preview:</label>
+            <img width="150px" height="150px">
+
+            <a href="">Download QR Code</a>
+            <button class="btn">Generate QR Code</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

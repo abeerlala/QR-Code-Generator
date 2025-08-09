@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: saira;
+}
+
+body {
+    background-color: #EEEBD3;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select optgroup::-webkit-label {
+    text-align: center;
+}
+
+.inner {
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 3px 3px 10px #4f7cac6f;
+    background-color: #4F7CAC;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.color1,
+.color2 {
+    width: 49%;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details1,
+.details2 {
+    width: 49%;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.URL {
+    height: 35px;
+    width: 100%;
+    padding: 0px 5px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+select {
+    height: 35px;
+    width: 100%;
+    padding: 0px 5px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+select::-webkit-scrollbar {
+    display: none;
+}
+
+input[type='color'] {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+    outline: none;
+}
+
+label[for="img"] {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+.btn,
+a{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover,
+a:hover {
+    background-color: #EEEBD3;
+}
+
+a {
+    margin-top: 30px;
+}
