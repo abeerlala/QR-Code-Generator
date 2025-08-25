@@ -1,5 +1,5 @@
 const inner = document.querySelector(".inner");
-const inputUrl = document.querySelector("input");
+const inputUrl = document.querySelector("#input");
 const inputRes = document.querySelector("#size");
 const inputFormat = document.querySelector("#format");
 const inputColor = document.querySelector("#color");
@@ -9,7 +9,7 @@ const img = document.querySelector("img");
 const link = document.querySelector("a");
 
 btn.addEventListener("click", () => {
-    let finalUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(inputUrl.value)}&size=${inputRes.value}&format=${inputFormat.value}&margin=0&qzone=1&color=${inputColor.value.replaceAll("#", "")}&bgcolor=${bgColor.value.replaceAll("#", "")}`;
+    let finalUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${inputUrl.value}&size=${inputRes.value}&format=${inputFormat.value}&margin=100&qzone=1&color=${inputColor.value.replaceAll("#", "")}&bgcolor=${bgColor.value.replaceAll("#", "")}`;
     console.log(finalUrl)
     img.setAttribute("src", finalUrl);
     img.setAttribute("alt", `${inputUrl.value}`);
